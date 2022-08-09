@@ -9,14 +9,14 @@
   tasks:
     - name: login to nexus pvt repo 
         docker_login:
-        registry: http://54.243.105.5:8085
+        registry: http://54.147.183.194:8085
         username: admin 
         password: hetal123
         reauthorize: yes
     - name: ensure your container is running
       docker_container:
         name: chatapp
-        image: 54.243.105.5:8085/chatapp6
+        image: 54.147.183.194:8085/chatapp11
         state: started
         recreate: yes
         exposed_ports:
